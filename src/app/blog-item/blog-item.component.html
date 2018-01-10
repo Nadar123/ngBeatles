@@ -1,0 +1,25 @@
+
+
+<div style="margin-top:7em" class="ui main text container segment">
+  <div class="ui huge header">
+    {{ blog.title }}
+  </div>
+  <div class="ui top attached sement">
+    <div class="item"> <img class=" ui medium rounded image" src="{{blog.image}}" />
+      <div class="content">
+        here will come a date <br>
+                </div>
+        <div class="description">
+          <br>
+            <p>
+              {{ blog.body }}
+            </p>
+      </div>
+          <a class="ui green basic button" routerLink="/blogs/{{blog._id}}/edit">edit</a>
+          <form id="delete" action="/blogs/{{blog._id}}?_method=DELETE" method="POST">
+            <a class="ui red basic button">Delete </a>
+          </form>
+
+        </div>
+      </div>
+    </div>

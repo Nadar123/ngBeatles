@@ -1,0 +1,33 @@
+
+
+<div style="margin-top:7em" class="ui main text container segment">
+    <div class="ui huge header">
+        {{ album.title }}
+    </div>
+    <div class="ui top attached sement">
+        <h4>
+            {{ album.albumYear }}
+        </h4>
+        <img src="{{album.cover}}" />
+        <div class="item" class="ui centered rounded image">
+            <div class="content">
+                <ul>
+
+                    <li *ngFor = "let song of album.songs">
+                        {{ song }}
+                    </li>
+                                        
+                </ul>
+        </div>
+        <div class="description">
+            {{ album.description }}
+
+            <h5>
+                <a href="{{album.musicLink.url}}">
+                    {{ album.musicLink.name }}
+                </a>
+            </h5>
+        </div>
+    </div>
+</div>
+

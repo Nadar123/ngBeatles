@@ -1,0 +1,23 @@
+
+<div class="ui main text container">
+  <div class="ui huge header">
+    <br>
+      BEATLES ALBUMS
+            <br>
+        <div class="ui top attached segment">
+          <div class="ui divided items">
+            <div *ngFor="let album of albums" class="item">
+               <div class="item">
+              <div class="image">
+                <img class="ui medium rounded image" src="{{album.cover}}" />
+              </div>
+              <div class="content">
+                <br>
+                  <a class="header" routerLink="/album/{{album._id}}">
+                    {{ album.title }}
+                  </a>
+              </div>
+              </div>
+            </div>
+          </div>
+
