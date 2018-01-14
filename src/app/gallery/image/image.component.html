@@ -1,15 +1,14 @@
 <div class="row">
   <div class=col-md-12>
-      <a class="btn btn-primary" routerLink= "/gallery">Back</a>
-
-    <div [ngStyle]="{'background-image':'url('+ image.url +')'}" class="img-container paper">
+    <div style="margin-top: 7em;" [ngStyle]="{'background-image':'url('+ image.url +')'}" class="img-container paper">
     </div>
   </div>
 </div>
-<div class="row">
-    <div class="col-md-12 caption-row">
+<div  class="row">
+    <div  class="col-md-12 caption-row">
       <span id="caption">
-        {{image.caption}}
-      </span>
+        {{image.caption}} <br>
+      </span><br><br>
+      <a class="ui black basic button" routerLink= "/gallerybeatles">Back</a>
     </div>
 </div>

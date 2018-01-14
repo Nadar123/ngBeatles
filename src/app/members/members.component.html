@@ -1,25 +1,21 @@
 
 
 <div class="ui main text container">
-  <div class="ui huge header">
-    THE BEATLES MEMBERS
+  <div style="margin-top: 5em" class="ui huge header">
+    THE BEATLES MEMBERS <br>
       <div class="ui top attached segment">
-      <div class="ui divided items" *ngFor="let member of members" class="item">
-              {{ member }}
-      <div class="item">
-        <div class="image">
-          <img class="ui medium rounded image" class="ui medium rounded image" src="{{member.image}}" />
-        </div>
-        <div class="content">
-          <a class="header" routerLink="/member/{{member._id}}">
-            {{ member.title }}
-          </a>
-
-
+        <div class="ui divided items">
+          <div *ngFor="let member of members" class="item">
+                <div class="image">
+                <img class="ui medium rounded image" src="{{member.image}}" />
+              </div> 
+          <div class="content">
+          <a style="margin-left: 2em;" class="header" routerLink="/member/{{member._id}}">
+            {{ member.title }} <p>Year of Birth {{member.dateOfBirth}}</p></a>
+           
+          
         </div>
       </div>
-
-
-    </div>
   </div>
 </div>
+

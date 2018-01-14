@@ -15,9 +15,11 @@ import { AlbumComponent } from './album/album.component';
 import { BlogService} from './blog.service';
 import { GallerybeatlesComponent } from './gallery/gallerybeatles/gallerybeatles.component';
 import { ImageComponent } from './gallery/image/image.component';
+import { AlbumService} from './album.service';
 
 import { ImageService } from './gallery/image/shared/image.service';
 import { ImageFilterPipe } from './gallery/image/shared/filter.pipe';
+import { MembersService } from './members.service';
 
 @NgModule({
   declarations: [
@@ -53,7 +55,9 @@ import { ImageFilterPipe } from './gallery/image/shared/filter.pipe';
   ],
   providers: [
     BlogService,
-    ImageService
+    ImageService,
+    AlbumService,
+    MembersService
   ],
   bootstrap: [AppComponent]
 })

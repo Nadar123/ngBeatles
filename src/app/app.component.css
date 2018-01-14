@@ -12,6 +12,7 @@ img{
 }
 #delete{
     display: inline;
+    margin-right: 2em;
 }
  .ui huge header{
     margin: 7em;

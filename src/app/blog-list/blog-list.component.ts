@@ -15,3 +15,9 @@ export class BlogListComponent implements OnInit {
   }
 
 }
+
+
+  /*id = 1234;
+  ngOnInit() {
+  }*/
+
