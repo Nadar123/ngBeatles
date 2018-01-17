@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+  
 
 @Injectable()
 export class BlogService {
@@ -18,7 +19,6 @@ export class BlogService {
       'image': 'http://images.genius.com/88c5ded1a0566dff01af570134b73722.1000x1000x1.jpg',
       // tslint:disable-next-line:max-line-length
       'body': 'The Beatles wn 1963 their enMartin suggested rerecording \'Please Please Me\' at a faster tempo,[42] a studio session in late November yielded that recording,[43] of which Martin accurately predicted, \'You\'ve just made your first No.1.\'[44]\r\n\r\nIn December 1962, the Beatles concluded their fifth and final Hamburg residency.[45] By 1963, they had agreed that all four band members would contribute vocals to their albums – including Starr, despite his restricted vocal range, to validate his anngwriting partnershiuccess grew, their dominant collaboration limited Harrison\'s opportunities as a lead vocalist.[47] Epstein, in an effort to maximise the Beatles\' commercial potential, encouraged them to adopt a professional approach to performing.[48] Lennon recalled him saying, \'Look, if you really want to get in these bigger places, you\'re going to have to change – stop eating on stage, stop swearing, stop smoking ...\'[36] Lennon said: \'We used to dress how we liked, on and off stage. He\'d tell us that jeans were not particularly smart and could we possibly manage to wear proper trousers, but he didn\'t want us suddenly looking square. He\'d let us have our own sense of individuality.\'[36]\r\n\r\n1963–1966: Beatlemania and touring years ',
-
     },
     {
       '_id': '5a1bc9b4597b2939b71dc587',
@@ -62,5 +62,24 @@ export class BlogService {
       }
     }
   }
+  delete(id: string) {
+    for ( let i = 0; i < this.items.length; i++) {
+      if ( this.items[i]._id === id) {
+        this.items.splice(i, 1);
+        return;
+      }
+    }
 
+  }
+  add(blogitem: any) {
+    this.items.push(blogitem);
+  }
+  create(item: any) {
+    item._id = '' + Math.random();
+    this.items.push( item );
+    return item._id;
+  }
+
+    update(item: any ) {
+    }
 }

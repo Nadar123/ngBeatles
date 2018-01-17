@@ -1,0 +1,28 @@
+
+
+
+    <div style="margin-top:7em" class="ui main text container segment">
+        <div class="ui huge header"> {{formTitle}}:<br>
+            {{item.title}}
+        </div>
+        <form ngSubmit="onSubmit()" class="ui form" >
+            <div class="field">
+                <label> Title</label>
+
+                <input name="title" id="title" [(ngModel)]="item.title" type="text"/>
+            </div>
+            <div class="field">
+                <label>Image</label>
+                <input name="image" id="image" type="text" [(ngModel)]="item.image"/>
+            </div>
+            <div class="field">
+                <label>Blog Content</label>
+                <textarea name="body" id="body" [(ngModel)]="item.body"> </textarea>
+            </div>
+
+            <input (click)="onSubmit()"
+            class="ui grey basic button" type="Submit">
+        </form>
+
+    </div>
+  

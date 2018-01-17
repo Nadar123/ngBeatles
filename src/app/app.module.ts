@@ -1,7 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
-
+import {HttpClientModule} from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { BlogListComponent } from './blog-list/blog-list.component';
@@ -20,6 +21,7 @@ import { AlbumService} from './album.service';
 import { ImageService } from './gallery/image/shared/image.service';
 import { ImageFilterPipe } from './gallery/image/shared/filter.pipe';
 import { MembersService } from './members.service';
+import { BlogEditComponent } from './blog-edit/blog-edit.component';
 
 @NgModule({
   declarations: [
@@ -34,13 +36,17 @@ import { MembersService } from './members.service';
     AlbumComponent,
     GallerybeatlesComponent,
     ImageComponent,
-    ImageFilterPipe
+    ImageFilterPipe,
+    BlogEditComponent
 
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
+    FormsModule,
     RouterModule.forRoot([
       { path: '', component: BlogListComponent },
+      { path: 'blog/new', component: BlogEditComponent},
       { path: 'blog/:id', component: BlogItemComponent },
       { path: 'albums', component: AlbumsComponent },
       { path: 'members', component: MembersComponent },
@@ -48,7 +54,8 @@ import { MembersService } from './members.service';
       { path: 'member/:id', component: MemberComponent },
       { path: 'album/:id', component: AlbumComponent },
       { path: 'gallerybeatles', component: GallerybeatlesComponent},
-      { path: 'image/:id', component: ImageComponent }
+      { path: 'image/:id', component: ImageComponent },
+      { path: 'blog/edit/:id', component: BlogEditComponent }
 
 
     ])
