@@ -2,10 +2,10 @@
 
 <div class="row">
     <div class="buttons">
-        <button id ="btn" class="ui black basic button" [class.active]="filerBy=='all'" (click)= "filterBy= 'all'">all</button>
-        <button  id ="btn" class="ui black basic button" [class.active]="filerBy=='all'" (click)= "filterBy= 'beatles'">the Band </button>
-        <button  id ="btn" class="ui black basic button" [class.active]="filerBy=='all'" (click)= "filterBy= 'member'">Member</button>
-        <button  id ="btn" class="ui black basic button" [class.active]="filerBy=='all'" (click)= "filterBy= 'special'">special</button>
+        <button id ="btn" class="ui black basic button" (click)= "filterBy= 'all'">all</button>
+        <button id ="btn" class="ui black basic button" (click)= "filterBy= 'beatles'">the Band </button>
+        <button id ="btn" class="ui black basic button" (click)= "filterBy= 'member'">Member</button>
+        <button id ="btn" class="ui black basic button" (click)= "filterBy= 'special'">special</button>
     </div>
 
     <ul id="thumbnailsList">
@@ -17,63 +17,3 @@
     </ul>
 
 
-<!--<div class="ui four column grid">
-<button style="margin-right: 1em" class="ui black basic button" [class.active]="filerBy=='all'" (click)= "filterBy= 'all'">all</button>
-
-    <button style="margin-right: 1em" class="btn btn-primary" [class.active]="filerBy=='all'" (click)= "filterBy= 'all'"> All</button>
-    <button style="margin-right: 1em" class="btn btn-primary" [class.active]="filerBy=='all'" (click)="filterBy='beatles'"> the Band</button>
-    <button style="margin-right: 1em" class="btn btn-primary" [class.active]="filerBy=='all'" (click)="filterBy='member'"> Beatles Members</button>
-    <button style="margin-right: 1em" class="btn btn-primary" [class.active]="filerBy=='all'" (click)="filterBy='special'"> speical pictures</button>
-
-       <div class="ui container ui horizontal list">
-            <div *ngFor="let image of (visibleImages | imageFilter:filterBy)" class="item">
-                    <a routerLink = '/image/{{image.id}}/'>
-             <img class="ui small image" src="{{image.url}}" width="240px" height="210px"/>
-                </a>
-                </div>
-                </div>-->
-
-               
-                  <!--  <div *ngFor="let image of (visibleImages | imageFilter:filterBy)" class="column">
-                        <div class="ui segment">
-                            <a routerLink = '/image/{{image.id}}/'>
-                            <img class="ui small image" src="{{image.url}}" width="240px" height="210px"/>
-                            </a>
-                        </div>
-                    </div>
-                </div>-->
-                  
-
-
-                
-
-
-     <!--   <li *ngFor="let image of (visibleImages | imageFilter:filterBy)">
-            <a routerLink = '/image/{{image.id}}/'>
-            <img src="{{image.url}}" class="tn" width="240px" height="210px"/>
-            </a>
-        </li>
-    </ul>
-      
-    <div class="ui small images">
-
-    <img class="ui small image" src="/images/wireframe/image.png">
-
-
-    Example
-    <div class="ui relaxed horizontal list">
-      <div class="item">
-        <img class="ui avatar image" src="/images/avatar/small/daniel.jpg">
-
-
-<div class="ui link list">
-  <div class="active item">Home</div>
-  <a class="item">About</a>
-  <a class="item">Jobs</a>
-  <a class="item">Team</a>
-</div>
-
-
-<div class="ui attached stackable menu">
-    <div class="ui container">
-      <a class="item">-->
