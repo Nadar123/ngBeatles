@@ -5,19 +5,22 @@
         <div class="ui huge header"> {{formTitle}}:<br>
             {{item.title}}
         </div>
-        <form ngSubmit="onSubmit()" class="ui form" >
+        <form #f="ngForm" ngSubmit="onSubmit()" class="ui form" >
             <div class="field">
                 <label> Title</label>
-
-                <input name="title" id="title" [(ngModel)]="item.title" type="text"/>
+                <input class="form-control" name="title" id="title" #title="ngModel" [(ngModel)]="item.title" type="text" required/>
+                <div class="alret" *ngIf="title.touched && title.invalid"> Title is required :))) We Love You.</div>
             </div>
             <div class="field">
                 <label>Image</label>
-                <input name="image" id="image" type="text" [(ngModel)]="item.image"/>
-            </div>
+                <input #image="ngModel" class="form-control" name="image" id="image" type="text" [(ngModel)]="item.image" required/>
+                <div class="alret" *ngIf="image.touched && image.invalid"> Image is required  </div>
+
+                </div>
             <div class="field">
                 <label>Blog Content</label>
-                <textarea name="body" id="body" [(ngModel)]="item.body"> </textarea>
+                <textarea #body="ngModel" class="form-control" name="body" id="body" [(ngModel)]="item.body"> </textarea>
+                <div class="alret" *ngIf="body.touched && body.invalid">Beatles Content will be Super Great, Plz share it with us</div>
             </div>
 
             <input (click)="onSubmit()"

@@ -1,6 +1,4 @@
 import { Injectable } from '@angular/core';
-  
-
 @Injectable()
 export class BlogService {
 
@@ -48,8 +46,30 @@ export class BlogService {
       'image': 'https://i.pinimg.com/736x/b8/84/71/b884713080a878e677e70a0f87606008--filing-cabinet-george-harrison.jpg',
       'body': ' \'Here they sit in the most sexy cafe at that time \'Rolie Cafe\'\r\nAll the big names use to sit here\' ',
 
+    },
+    {
+      '_id': '5a1d1f84c0124543ff20d7b7',
+      'title': 'Beatles Touring USA:)))!',
+      // tslint:disable-next-line:max-line-length
+      'image': 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjqHpVOUP4fDNyS4EUiWtO2Rm0Ak1Iuzpcba9YEVCz6O4OcCHq',
+      'body': 'The Beatles\' rise to prominence in the United States in February 1964 was a significant development in the history of the band\'s commercial success.[1] In addition to establishing the Beatles\' international stature, it changed attitudes to popular music in the United States,[2] whose own Memphis-driven musical evolution had made it a global trend-setter.[3]The Beatles\' first visit to the United States came at a time of great popularity in Britain. The band\'s UK commercial breakthrough, in late 1962, had been followed by a year of successful concerts and tours. The start of the Beatles\' popularity in the United States, in early 1964, was marked by intense demand for the single "I Want to Hold Your Hand"—which sold one-and-a-half million copies in under three weeks—and the band\'s arrival the following month.[1] The visit, advertised across the United States on five million posters,[1] was a defining moment in the Beatles\' history, and the starting-point of the British Invasion. Following popular television appearances and concerts during their February 1964 visit, the Beatles returned to the United States in August 1964, and again in August 1965, for tours. In August 1966 they returned once more, and although this tour was commercially successful, it coincided with a storm of U.S. public protest after publication of a quote from John Lennon\'s remarks about Christianity. The 1966 U.S. tour marked the end of the Beatles\' concert days. The band ceased to perform commercial concerts, instead devoting their efforts to creating new material in the recording studi'
+    },
+    {
+      '_id': '5a1d1f84c0b7',
+      'title': 'Beatles Last concert',
+      // tslint:disable-next-line:max-line-length
+      'image': 'https://timedotcom.files.wordpress.com/2014/01/post_05806342.jpg',
+      // tslint:disable-next-line:max-line-length
+      'body': 'At least the audience couldn\'t hear how ragged they had become – not that they would have cared. "The sound at our concerts was always bad. We would be joking with each other on stage just to keep ourselves amused," remembered Harrison in the Anthology. Lennon took particular delight in making vaguely obscene alterations to their song lyrics ("I Wanna Hold Your Gland"), knowing full well that no one had any clue what he was saying. "It was just a sort of a freak show," he later said. "The Beatles were the show, and the music had nothing to do with it."The boredom of playing the same dozen songs each day also began to grate on the group\'s notoriously short attention span. Making matters worse, most of the tunes were several years old. Much of their recent work was enhanced by backing musicians and innovative studio techniques, making it simply too challenging to perform given the technical limitations of a live setting. In fact, the Beatles would never play a single track off of their latest album, Revolver, released just days before they kicked off their dates.Neither they nor the audience could hear anything, they weren\'t improving their skills, they weren\'t promoting their new music, and they weren\'t enjoying themselves. They certainly didn\'t need the money, so why were they doing this The question was on everyone\'s mind during the 1966 U.S. tour, a cursed excursion beset by a string of unmitigated disasters. The Klu Klux Klan, still outraged over Lennon\'s "bigger than Jesus" comment, picketed some gigs, while other shows competed with nearby race riots. A firecracker exploded during their Memphis concert, causing the band to momentarily believe that a gunman finally made good on the assassination threats.'
+    },
+    {
+      '_id': '5a1d1f84c0124543ff20d7b7',
+      'title': 'Happy Day ',
+      'image': 'https://media.giphy.com/media/l553EJcE3Mrqo/giphy.gif',
+      'body': 'Hope you enjoyed'
     }
   ];
+
   constructor() { }
    getItems() {
      return this.items;

@@ -1,3 +1,8 @@
+body{
+    
+    padding: 0;
+    font-size: 16px;
+}
 .row{
     margin-top: 7em;
 }
@@ -7,13 +12,15 @@
    
 }
 .buttons, #btn{
+    display: flex;
     margin-left: 2em;
+
 }
 
 ul{
     padding: 3em;
-    width: 1400px;
-    max-width: 1400px;
+    width: 100%;
+    max-width: 100%;
     min-width: 480px;
     margin: 20px auto;
 
